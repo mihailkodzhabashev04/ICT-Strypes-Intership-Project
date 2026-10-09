@@ -1,0 +1,352 @@
+[
+    {
+        "title": "It's Only the Himalayas",
+        "price": "£45.17",
+        "availability": "In stock",
+        "rating": 2,
+        "category": "Travel"
+    },
+    {
+        "title": "Full Moon over Noah’s Ark: An Odyssey to Mount Ararat and Beyond",
+        "price": "£49.43",
+        "availability": "In stock",
+        "rating": 4,
+        "category": "Travel"
+    },
+    {
+        "title": "See America: A Celebration of Our National Parks & Treasured Sites",
+        "price": "£48.87",
+        "availability": "In stock",
+        "rating": 3,
+        "category": "Travel"
+    },
+    {
+        "title": "Vagabonding: An Uncommon Guide to the Art of Long-Term World Travel",
+        "price": "£36.94",
+        "availability": "In stock",
+        "rating": 2,
+        "category": "Travel"
+    },
+    {
+        "title": "Under the Tuscan Sun",
+        "price": "£37.33",
+        "availability": "In stock",
+        "rating": 3,
+        "category": "Travel"
+    },
+    {
+        "title": "Sharp Objects",
+        "price": "£47.82",
+        "availability": "In stock",
+        "rating": 4,
+        "category": "Mystery"
+    },
+    {
+        "title": "In a Dark, Dark Wood",
+        "price": "£19.63",
+        "availability": "In stock",
+        "rating": 1,
+        "category": "Mystery"
+    },
+    {
+        "title": "The Past Never Ends",
+        "price": "£56.50",
+        "availability": "In stock",
+        "rating": 4,
+        "category": "Mystery"
+    },
+    {
+        "title": "A Murder in Time",
+        "price": "£16.64",
+        "availability": "In stock",
+        "rating": 1,
+        "category": "Mystery"
+    },
+    {
+        "title": "The Murder of Roger Ackroyd (Hercule Poirot #4)",
+        "price": "£44.10",
+        "availability": "In stock",
+        "rating": 4,
+        "category": "Mystery"
+    },
+    {
+        "title": "Tipping the Velvet",
+        "price": "£53.74",
+        "availability": "In stock",
+        "rating": 1,
+        "category": "Historical Fiction"
+    },
+    {
+        "title": "Forever and Forever: The Courtship of Henry Longfellow and Fanny Appleton",
+        "price": "£29.69",
+        "availability": "In stock",
+        "rating": 3,
+        "category": "Historical Fiction"
+    },
+    {
+        "title": "A Flight of Arrows (The Pathfinders #2)",
+        "price": "£55.53",
+        "availability": "In stock",
+        "rating": 5,
+        "category": "Historical Fiction"
+    },
+    {
+        "title": "The House by the Lake",
+        "price": "£36.95",
+        "availability": "In stock",
+        "rating": 1,
+        "category": "Historical Fiction"
+    },
+    {
+        "title": "Mrs. Houdini",
+        "price": "£30.25",
+        "availability": "In stock",
+        "rating": 5,
+        "category": "Historical Fiction"
+    },
+    {
+        "title": "Scott Pilgrim's Precious Little Life (Scott Pilgrim #1)",
+        "price": "£52.29",
+        "availability": "In stock",
+        "rating": 5,
+        "category": "Sequential Art"
+    },
+    {
+        "title": "Tsubasa: WoRLD CHRoNiCLE 2 (Tsubasa WoRLD CHRoNiCLE #2)",
+        "price": "£16.28",
+        "availability": "In stock",
+        "rating": 1,
+        "category": "Sequential Art"
+    },
+    {
+        "title": "This One Summer",
+        "price": "£19.49",
+        "availability": "In stock",
+        "rating": 4,
+        "category": "Sequential Art"
+    },
+    {
+        "title": "The Nameless City (The Nameless City #1)",
+        "price": "£38.16",
+        "availability": "In stock",
+        "rating": 4,
+        "category": "Sequential Art"
+    },
+    {
+        "title": "Saga, Volume 5 (Saga (Collected Editions) #5)",
+        "price": "£51.04",
+        "availability": "In stock",
+        "rating": 2,
+        "category": "Sequential Art"
+    },
+    {
+        "title": "The Secret Garden",
+        "price": "£15.08",
+        "availability": "In stock",
+        "rating": 4,
+        "category": "Classics"
+    },
+    {
+        "title": "The Metamorphosis",
+        "price": "£28.58",
+        "availability": "In stock",
+        "rating": 1,
+        "category": "Classics"
+    },
+    {
+        "title": "The Pilgrim's Progress",
+        "price": "£50.26",
+        "availability": "In stock",
+        "rating": 2,
+        "category": "Classics"
+    },
+    {
+        "title": "The Hound of the Baskervilles (Sherlock Holmes #5)",
+        "price": "£14.82",
+        "availability": "In stock",
+        "rating": 2,
+        "category": "Classics"
+    },
+    {
+        "title": "Little Women (Little Women #1)",
+        "price": "£28.07",
+        "availability": "In stock",
+        "rating": 4,
+        "category": "Classics"
+    },
+    {
+        "title": "Sophie's World",
+        "price": "£15.94",
+        "availability": "In stock",
+        "rating": 5,
+        "category": "Philosophy"
+    },
+    {
+        "title": "The Death of Humanity: and the Case for Life",
+        "price": "£58.11",
+        "availability": "In stock",
+        "rating": 4,
+        "category": "Philosophy"
+    },
+    {
+        "title": "The Stranger",
+        "price": "£17.44",
+        "availability": "In stock",
+        "rating": 4,
+        "category": "Philosophy"
+    },
+    {
+        "title": "Proofs of God: Classical Arguments from Tertullian to Barth",
+        "price": "£54.21",
+        "availability": "In stock",
+        "rating": 1,
+        "category": "Philosophy"
+    },
+    {
+        "title": "Kierkegaard: A Christian Missionary to Christians",
+        "price": "£47.13",
+        "availability": "In stock",
+        "rating": 1,
+        "category": "Philosophy"
+    },
+    {
+        "title": "Chase Me (Paris Nights #2)",
+        "price": "£25.27",
+        "availability": "In stock",
+        "rating": 5,
+        "category": "Romance"
+    },
+    {
+        "title": "Black Dust",
+        "price": "£34.53",
+        "availability": "In stock",
+        "rating": 5,
+        "category": "Romance"
+    },
+    {
+        "title": "Her Backup Boyfriend (The Sorensen Family #1)",
+        "price": "£33.97",
+        "availability": "In stock",
+        "rating": 1,
+        "category": "Romance"
+    },
+    {
+        "title": "First and First (Five Boroughs #3)",
+        "price": "£15.97",
+        "availability": "In stock",
+        "rating": 4,
+        "category": "Romance"
+    },
+    {
+        "title": "Fifty Shades Darker (Fifty Shades #2)",
+        "price": "£21.96",
+        "availability": "In stock",
+        "rating": 1,
+        "category": "Romance"
+    },
+    {
+        "title": "I Had a Nice Time And Other Lies...: How to find love & sh*t like that",
+        "price": "£57.36",
+        "availability": "In stock",
+        "rating": 4,
+        "category": "Womens Fiction"
+    },
+    {
+        "title": "Will You Won't You Want Me?",
+        "price": "£13.86",
+        "availability": "In stock",
+        "rating": 3,
+        "category": "Womens Fiction"
+    },
+    {
+        "title": "Keep Me Posted",
+        "price": "£20.46",
+        "availability": "In stock",
+        "rating": 4,
+        "category": "Womens Fiction"
+    },
+    {
+        "title": "Grey (Fifty Shades #4)",
+        "price": "£48.49",
+        "availability": "In stock",
+        "rating": 4,
+        "category": "Womens Fiction"
+    },
+    {
+        "title": "Meternity",
+        "price": "£43.58",
+        "availability": "In stock",
+        "rating": 3,
+        "category": "Womens Fiction"
+    },
+    {
+        "title": "Soumission",
+        "price": "£50.10",
+        "availability": "In stock",
+        "rating": 1,
+        "category": "Fiction"
+    },
+    {
+        "title": "Private Paris (Private #10)",
+        "price": "£47.61",
+        "availability": "In stock",
+        "rating": 5,
+        "category": "Fiction"
+    },
+    {
+        "title": "We Love You, Charlie Freeman",
+        "price": "£50.27",
+        "availability": "In stock",
+        "rating": 5,
+        "category": "Fiction"
+    },
+    {
+        "title": "Thirst",
+        "price": "£17.27",
+        "availability": "In stock",
+        "rating": 5,
+        "category": "Fiction"
+    },
+    {
+        "title": "The Murder That Never Was (Forensic Instincts #5)",
+        "price": "£54.11",
+        "availability": "In stock",
+        "rating": 3,
+        "category": "Fiction"
+    },
+    {
+        "title": "Birdsong: A Story in Pictures",
+        "price": "£54.64",
+        "availability": "In stock",
+        "rating": 3,
+        "category": "Childrens"
+    },
+    {
+        "title": "The Bear and the Piano",
+        "price": "£36.89",
+        "availability": "In stock",
+        "rating": 1,
+        "category": "Childrens"
+    },
+    {
+        "title": "The Secret of Dreadwillow Carse",
+        "price": "£56.13",
+        "availability": "In stock",
+        "rating": 1,
+        "category": "Childrens"
+    },
+    {
+        "title": "The White Cat and the Monk: A Retelling of the Poem “Pangur Bán”",
+        "price": "£58.08",
+        "availability": "In stock",
+        "rating": 4,
+        "category": "Childrens"
+    },
+    {
+        "title": "Little Red",
+        "price": "£13.47",
+        "availability": "In stock",
+        "rating": 3,
+        "category": "Childrens"
+    }
+]
