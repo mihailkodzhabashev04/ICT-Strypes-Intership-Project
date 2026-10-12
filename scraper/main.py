@@ -56,6 +56,7 @@ def run_scraper(site, session_summary):
 
     except Exception as e:
         print(f"Error: {e}")
+        return
 
     #In case nothing was scraped.
     if not records:
@@ -72,6 +73,7 @@ def run_scraper(site, session_summary):
         saved_path = save_json(records, output_path)
     except OSError as e:
         print(f"The data was scraped, but could not be saved.\nDetails: {e}")
+        return
 
     #Displaying the summary
     print("\nScraping successful!")

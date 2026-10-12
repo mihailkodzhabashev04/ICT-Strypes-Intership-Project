@@ -1,3 +1,12 @@
+"""
+A scraper for https://books.quotes.com/
+
+Extracted data (each record is a dictionary)
+    Quote Text,
+    Author,
+    Tags,
+"""
+
 from bs4 import BeautifulSoup
 import time
 from urllib.parse import urljoin
@@ -15,18 +24,18 @@ def parse_page(html):
     """
     The logic is: Parse one page -> (records, link to next page ot None)
     """
-    soup = BeautifulSoup(html, 'html.parser')
+    soup = BeautifulSoup(html, "html.parser")
 
     records = []
 
-    for card in soup.select('div.quote'):
+    for card in soup.select("div.quote"):
         text = card.select_one("span.text")
         author = card.select_one("small.author")
 
         if text is None or author is None:
             continue
 
-        tags = [tag.get_text(strip=True) for tag in card.select('div.tagsa.tag')]
+        tags = [tag.get_text(strip=True) for tag in card.select("div.tags a.tag")]
 
         records.append({
             "quote": text.get_text(strip=True),
@@ -34,14 +43,15 @@ def parse_page(html):
             "tags": ",".join(tags),
         })
 
-    next_link = soup.select_one('li.next > a')
+    next_link = soup.select_one("li.next > a")
     if next_link is not None and next_link.get("href"):
-        return records, next_link.get["href"]
+        return records, next_link["href"]
 
     return records, None
 
 
 def scrape_quotes():
+    #Scrape op to MAX_PAGES pages and return a list of records.
     all_records = []
     url = START_URL
 
