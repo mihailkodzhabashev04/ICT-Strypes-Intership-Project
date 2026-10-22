@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+
+
+{% block body %}
+
+<h1 class="my-3">Latest</h1>
+    <div class="row">
+        {% for post in posts %}
+            {% include 'posts/includes/postcard.html' %}
+        {% endfor %}
+        
+        
+    </div>
+{% endblock body %}
+        
+        
