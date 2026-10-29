@@ -2,30 +2,33 @@
 
 {% block body %}
 <div class="content d-flex flex-column">
-    <img class="text-center" src="" />
+    <img class="text-center" src="{{ post.post_image.url }}" />
         <div class="h5 text-center text-body-secondary">{{ post.pundlished_date }}</div>
 
         <h1 class="text-center fs-1 fw-bold my-3">{{ post.post_title }}</h1>
         <div class="d-flex justify-content-center align-items-center flex-wrap ">
-            
-                <a href="" class="btn btn-dark opacity-70 text-light m-2">#python</a>
-            
-            <a href="" class="btn btn-dark opacity-70 text-light m-2">#python</a>
-            <a href="" class="btn btn-primary opacity-70 text-light m-2">#datastructures & algorithms</a>
-            <a href="" class="btn btn-danger opacity-70 text-light m-2">#programming</a>
-            <a href="" class="btn btn-success opacity-70 text-light m-2">#software developers</a>
-            <a href="" class="btn btn-dark opacity-70 text-light m-2">#Travel</a>
-            <a href="" class="btn btn-primary opacity-70 text-light m-2">#Food</a> 
+                     
+            {% for tag in post.tags.all %}
+                <a href="{% url 'tags' tag.id %}" class="btn btn-dark opacity-70 text-light m-2">#{{ tag.name }}</a>
+            {% endfor %}
         </div>
         <hr class="border border-dark border-1 opacity-50">
         <p>{{ post.post_content }}</p>
     </div>
     <h2>Comments</h2>
+    {% if user.is_authenticated %}
+    
     <form method='POST'>
-        <textarea name="" class="form-control" id=""></textarea>
-        <button type='submit' class='btn btn-primary'>Comment</button>
-    </form>
-    <h2 class='bg-danger'>Login To Comment</h2>
+        
+        {{form}}
+        {% csrf_token %}
+        <button type="submit" class="btn btn-primary">Comment</button>
+        <hr class="border border-dark border-1 opacity-50">
+        <p>{{ post.post_content }}</p>
+    {% else %}
+        <h2 class="bg-danger">You must be logged in to leave a comment.</h2>
+    {% endif %}
+    
     
     <div class="card m-2">
         
@@ -37,9 +40,11 @@
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
-                        <h5 class="card-title">Username</h5>
-                        <p class="card-text">Comment from the user</p>
-                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p> 
+                        {% for comment in comments %}
+                            <h5 class="card-title">{{ comment.user.username }}</h5>
+                            <p class="card-text">{{ comment.comment }}</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated {{ comment.comment_date }}</small></p>
+                        {% endfor %}
                     </div>
                 </div>
             </div>

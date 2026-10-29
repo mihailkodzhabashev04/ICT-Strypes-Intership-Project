@@ -99,18 +99,22 @@
                             </ul>
                         </li>
                     </ul>
-                   <form class="d-flex m-1" >
-                        <input class='form-control me-1' type='text'  />
+                   <form class="d-flex m-1" action="{% url 'search' %}" >
+                        <input class='form-control me-1' type='text'  
+                        name="query"/>
                         <button class='btn btn-outline-dark'>Search</button>
                    </form>
-                    
-                    <a href="" class="btn btn-dark m-2">Login</a>
-                    <a href="" class="btn btn-dark m-3">Create Account</a>
-                    
-                    <h2 style='font-size:20px;margin:5px'>Username</h2>
-                    
-                    <a class="btn btn-dark m-3" >Logout</a>
-             
+                    {% if not user.is_authenticated %}
+                        <a href="{% url 'login' %}" class="btn btn-dark m-2">Login</a>
+                        <a href="{% url 'register' %}" class="btn btn-dark m-3">Create Account</a>
+                    {% else %}
+                        <h2 style='font-size:20px;margin:5px'>{{ user.username }}</h2>
+                        <form action="{% url 'logout' %}" method="POST" class="d-inline">
+                            {% csrf_token %}
+                            <input type="submit" class="btn btn-dark m-3" value="Logout"></input>
+                        </form>
+                    {% endif %}
+                                 
                     <!-- <p class="h3 fw-bold m-2 ">Welcome - Username</p> -->
 
                 </div>
@@ -119,23 +123,7 @@
         {%block body%}
     
         {%endblock body%}
-        <div class="container d-flex justify-content-center">
-            <nav aria-label="Page navigation example">
-                <ul class="pagination">
-                    <li class="page-item"><a class="page-link" href="">Previous</a></li>
-                
-                    <li class="page-item"><a class="page-link" href="">1</a></li>
-            
-
-                    <li class="page-item active"><a class="page-link" href="#">2</a></li>
-              
-                    <li class="page-item"><a class="page-link" href="">3</a></li>
-                    
-                    <li class="page-item"><a class="page-link" href="">Next</a></li>
-                 
-                </ul>
-            </nav>
-        </div>
+        
 
     </div>
 

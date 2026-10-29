@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'posts',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -129,3 +130,13 @@ MAILERS = {
         'BACKEND': 'django.core.mail.backends.console.EmailBackend',
     },
 }
+
+# BUILT IN AUTHENTICATION VIEWS
+LOGIN_REDIRECT_URL = '/'
+
+LOGOUT_REDIRECT_URL = '/accounts/login/'
+
+# MEDIA FILES
+MEDIA_ROOT = BASE_DIR / 'media/'
+
+MEDIA_URL = '/media/'

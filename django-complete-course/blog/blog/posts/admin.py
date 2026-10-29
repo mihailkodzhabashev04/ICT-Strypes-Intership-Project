@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Post
+from .models import Comment, Post, Tag
 
 @admin.register(Post)
 class PostAdmin(admin.ModelAdmin):
@@ -9,4 +9,5 @@ class PostAdmin(admin.ModelAdmin):
     search_fields = ['post_title']
 
 # Register your models here.
-#admin.site.register(Post, PostAdmin)
+admin.site.register(Comment)
+admin.site.register(Tag)

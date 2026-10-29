@@ -1,14 +1,34 @@
-{% extends 'base.html' %}
-{% block body %}
+{%extends "base.html"%}
 
-<h1 class="my-3">Latest</h1>
+{% block body %}
+    <h1 class="my-3">Latest</h1>
     <div class="row">
-        {% for post in posts %}
-            {% include 'posts/includes/postcard.html' %}
+        {% for post in page_obj %}
+            {% include "posts/includes/postcard.html"  %}
         {% endfor %}
-        
-        
     </div>
+    {% if page_obj.paginator.count > 4 %}
+        <div class="container d-flex justify-content-center">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    {% if page_obj.has_previous %}
+                        <li class="page-item"><a class="page-link" href="?page={{ page_obj.previous_page_number }}">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="?page={{ page_obj.previous_page_number }}">{{ page_obj.previous_page_number }}</a></li>
+                    
+                        
+                    {% endif %}
+                    
+                        <li class="page-item active"><a class="page-link" href="?page=2">{{page_obj.number}}</a></li>              
+
+                    {% if page_obj.has_next %}
+                        <li class="page-item"><a class="page-link" href="?page={{ page_obj.next_page_number }}">Next</a></li>
+                        <li class="page-item"><a class="page-link" href="?page={{ page_obj.paginator.num_pages }}">Last</a></li>
+                    {% endif %}
+                    
+                </ul>
+            </nav>
+        </div>
+    {% endif %}
 {% endblock body %}
         
         

@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <h1>{{ tags.name }}</h1>
+    {% for post in posts %}
+        {% include 'posts/includes/postcard.html' with post=post %}
+    {% endfor %}
+
+{% endblock body %}
